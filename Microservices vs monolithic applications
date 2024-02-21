@@ -1,0 +1,31 @@
+Applications are generally made up off various components, such as the application and database. In creating our applications, we can either tightly 
+couple the components or loosely couple the components. It is up to us to choose the method. However, in tightly coupled models, if one of the components
+fail then the entire system fails. On the other hand, in loosely coupled systems, a failed component does not stop the whole application but only the failed component itself.
+
+Below are the differences between monolithic design (tightly coupled) and microservices approach (loosely coupled)
+
+Monolithic Applications:
+Architecture: Monolithic applications are built as a single, indivisible unit. All components, such as the user interface, business logic, and data access layer, are tightly coupled and packaged together.
+
+Deployment: In monolithic architectures, the entire application is deployed as a single unit. Updates or changes to any part of the application require redeploying the entire monolith.
+
+Scalability: Scaling a monolithic application involves replicating the entire application stack, including components that might not require additional resources. This can lead to inefficient resource utilization.
+
+Development: In monolithic architectures, multiple development teams often work on different modules within the same codebase. This can lead to coordination challenges, especially as the codebase grows larger.
+
+Testing: Testing a monolithic application involves testing the entire system together. As the application grows, testing becomes more complex and time-consuming.
+
+Technology Stack: Monolithic applications typically use a single technology stack, chosen at the beginning of the project. This can limit flexibility and innovation, especially as new technologies emerge.
+
+Microservices:
+Architecture: Microservices architectures decompose applications into smaller, independent services, each responsible for a specific business function. These services communicate with each other via APIs or messaging protocols.
+
+Deployment: Each microservice can be deployed independently, allowing for continuous delivery and deployment. Updates or changes to a single service do not require redeploying the entire application.
+
+Scalability: Microservices architectures allow for granular scalability. Individual services can be scaled independently based on demand, leading to more efficient resource utilization.
+
+Development: Microservices architectures promote smaller, more focused development teams, each responsible for a specific service. This can improve agility and reduce coordination overhead.
+
+Testing: Testing in a microservices architecture focuses on individual services, making it easier to isolate and test specific functionality. This can improve test coverage and reduce the risk of regressions.
+
+Technology Stack: Microservices architectures allow for polyglot development, where each service can use a different technology stack best suited for its requirements. This enables teams to leverage the right tools and technologies for each service.
