@@ -1,10 +1,88 @@
-## **Amazon Elastic Compute Cloud (EC2)**
+Amazon Elastic Compute Cloud (EC2)
 Amazon EC2  is a web service provided by Amazon Web Services (AWS) that allows users to rent virtual servers, called instances, in the cloud. 
 With EC2, users can quickly scale compute capacity up or down based on their requirements, paying only for the resources they use.
 
-### **EC2 Types**
+EC2 Types
 1. General purpose instances provide a balance of compute, memory, and networking resources.
 2. Compute optimized instances are ideal for compute-bound applications that benefit from high-performance processors. 
 3. Memory optimized instances are designed to deliver fast performance for workloads that process large datasets in memory. 
 4. Accelerated computing instances use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs
 5. Storage optimized instances are designed for workloads that require high, sequential read and write access to large datasets on local storage. 
+
+Amazon EC2 pricing
+In AWS, you only pay what you use. However, this price depends on the method you choose in terms of pricing. There are multiple 
+pricing schemes and some of these offer deep discounts.
+
+1. On Demand: On-Demand Instances are ideal for short-term, irregular workloads that cannot be interrupted. No upfront costs or 
+minimum contracts apply. The instances run continuously until you stop them, and you pay for only the compute time you use.
+2. Reserved Instances (RIs) are a pricing model offered by AWS where users commit to a one- or three-year term for a specific instance type in exchange for a significant 
+discount compared to On-Demand pricing.
+
+These commitments come with varying levels of flexibility (e.g., Standard RIs, Convertible RIs, and Scheduled RIs) and provide users with cost savings over the long term 
+for predictable workloads.
+
+The discount is based on the payment model (All Upfront, Partial Upfront, or No Upfront) and the term length.
+
+In exchange for the commitment, AWS offers discounts ranging from 40% to 75% compared to On-Demand pricing, making RIs a cost-effective 
+option for steady-state workloads.
+
+3. Instance Savings Plans are another pricing model offered by AWS, providing significant discounts on EC2 usage in exchange for a commitment 
+to a consistent amount of compute usage (measured in dollars per hour) for a one- or three-year term.
+
+With Instance Savings Plans, users commit to a specific usage amount (measured in dollars per hour) rather than a particular instance type, 
+providing more flexibility than Reserved Instances.
+
+These commitments offer discounts up to 72% compared to On-Demand pricing for EC2 usage.
+
+Instance Savings Plans automatically apply to EC2 usage in any region and instance family that matches the attributes of the plan, providing
+flexibility and coverage across different workloads.
+
+Instance Savings Plans are ideal for users with flexible workloads or those who want to maximize cost savings while maintaining flexibility
+in instance types and sizes.
+
+4. Spot Instances are a purchasing option provided by AWS that allows users to bid on spare EC2 capacity. Here's a brief overview:
+
+Spare Capacity: AWS offers spare capacity at a significantly reduced price compared to On-Demand instances through the Spot Instance 
+market.
+
+Bidding: Users specify the maximum price they are willing to pay per hour for the instance. If the current Spot price is below the user's
+bid, the instance will run. If the Spot price exceeds the bid, the instance may be terminated with a two-minute notification.
+
+Cost Savings: Spot Instances can offer cost savings of up to 90% compared to On-Demand instances, making them an attractive option for 
+workloads that are flexible in terms of availability and timing.
+
+Use Cases: Spot Instances are suitable for fault-tolerant, flexible, or non-time-sensitive workloads, such as batch processing, data 
+analysis, rendering, and CI/CD pipelines.
+
+Integration: Spot Instances can be seamlessly integrated into existing EC2 and Auto Scaling configurations, allowing users to combine 
+Spot Instances with On-Demand and Reserved Instances for cost optimization and workload flexibility.
+
+Best Practices: To effectively use Spot Instances, it's recommended to diversify across multiple instance types, sizes, and availability
+zones, utilize Spot Fleet for managing multiple Spot Instances, and architect applications for fault tolerance and interruption handling.
+
+5. Dedicated Hosts are physical servers that are fully dedicated to a single AWS account, providing visibility and control over underlying 
+hardware infrastructure. Here's a concise overview:
+
+Isolation: Dedicated Hosts offer physical isolation, allowing users to run instances on dedicated hardware without sharing resources with
+other customers.
+
+Regulatory Compliance: Dedicated Hosts are beneficial for customers with strict compliance requirements or licensing restrictions that 
+mandate physical isolation.
+
+Control: Users have granular control over the placement of instances on Dedicated Hosts, enabling them to meet specific compliance,
+regulatory, or licensing requirements.
+
+Cost Efficiency: While Dedicated Hosts may have a higher upfront cost compared to traditional EC2 instances, they can offer cost savings 
+for certain licensing scenarios or when optimizing for long-term usage.
+
+Instance Placement: Users can allocate instances to Dedicated Hosts based on specific criteria such as instance type, size, and region,
+providing flexibility and control over workload placement.
+
+Instance Management: Dedicated Hosts can be managed using AWS management tools, allowing users to monitor, resize, and manage instances
+running on Dedicated Hosts just like instances running on shared infrastructure.
+
+Use Cases: Dedicated Hosts are suitable for workloads with strict compliance requirements, licensing restrictions, or performance-sensitive
+applications that benefit from physical isolation and dedicated resources.
+
+Best Practices: When using Dedicated Hosts, it's essential to monitor resource utilization, optimize instance placement to maximize 
+resource utilization, and leverage features like host recovery to maintain high availability.
