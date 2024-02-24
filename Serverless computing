@@ -1,2 +1,7 @@
 Serverless computing means that you use the compute capacity of an infrastruture without seeing or accessing the actual infrastructure. For example, let's say that you have an application
 running. It runs on an EC2 instance. But you do not have to worry about the management of that EC2 instance. It is managed by AWS and all you have to worry aboutthe code of your application.
+
+Lambda:
+Lambda is one of the serverless compute services that AWS offers. You write your code into a Lambda function. After you enter your code, then you need something to trigger that code. Otherwise,
+your code does not work. But when the trigger works, then the code starts to wowrk. Where does it work? This is something that you do not need to worry. AWS takes care of it. Lambda functions run
+a maximum of 15 minutes so it is designed for short term processes.
