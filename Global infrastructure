@@ -1,2 +1,24 @@
-When you have an application running, you need some sort of server to host it. You can have a server in your premises or in a cloud based environment. The main question here is what happens 
-to your application if something happens to your server? 
+When you have an application running, you need some sort of server to host it. You can have a server in your premises or in a cloud based 
+environment. The main question here is what happens to your application if something happens to your server? 
+
+AWS answers to this question with a global infrastructure. First of all, the global infrastructure is seperated into regions. Regions are 
+distrubuted accross the globe to meet the requirements of the businesses. As a user, we have the ability to choose the region in which we
+will operate our business using AWS services. The capacity, services, and pricing differ from one region to another because of local laws and 
+regulations as well as other reasons.
+
+Before making a decision in terms of which region to choose, there are several criterias to consider.
+
+1. Compliance with local regulations and requirements
+For example, governments can require specific businesses, such as banks to keep all the data within the country. So you must have a data center 
+inside the country.
+
+2.Procimity to your customers
+It is always a good business approcah to choose a regıon that is closest to your customer base to reduce latency.
+
+3. Services 
+
+As mentioned earlier, not all regions offer all the servşces. So it is wise to check for services that are offered in a region before moving on
+
+4. Pricing
+
+Regions offer different pricing because it differs to operate a regions. Some countries have more taxes so the pricing is more expensive
