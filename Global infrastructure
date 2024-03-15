@@ -22,3 +22,13 @@ As mentioned earlier, not all regions offer all the servşces. So it is wise to 
 4. Pricing
 
 Regions offer different pricing because it differs to operate a regions. Some countries have more taxes so the pricing is more expensive
+
+
+Now that we understand the regions we can continue to Availability Zones (AZ)
+
+AWS have vnumerous data centers in all regions. A single data center or a grousp of data centers are called AZs. Each Availability Zone is one or
+more discrete data centers with redundant power, networking, and connectivity. When you launch an Amazon EC2 instance, it launches a virtual
+machine on a physical hardware that is installed in an Availability Zone. This means each AWS Region consists of multiple isolated and 
+physically separate Availability Zones within a geographic Region.
+
+
