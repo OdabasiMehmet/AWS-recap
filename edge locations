@@ -1,0 +1,10 @@
+Edge Locations
+
+Within the AWS infrastructure, the main idea is to select a region that is closest to your customer base. However, this might not be ideal for companies that have global customer base.
+For example, you may have a company located in US but you may have customers from Europe as well. For such scenerios, AWS developed Edge Locations.
+
+Edge locations store caches of you applications (images, videos, etc) and once stored offer them to the customers. For example, you are lcoated in US West 1 and your customer is in Paris. When
+they first reach an object in your application, the object will be retrieved from US West 1. However, when the customer tries to retrieve the same information, it will be offered from Paris edge
+lcoation as it was cached before. So the latency will be reduced.
+
+Edge lcoations offer Content Delivery Network as well as Route 53 which is the DNS server for AWS.
