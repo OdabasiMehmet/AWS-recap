@@ -1,1 +1,15 @@
+AWS offers hundreds of services and tools and you can choose to employ any of them based on your needs. In terms of cloud computing this process is called provisioning resources.
+There are multiple ways to provision resources or in other words interact with AWS services. No matter which way you choose, all the process is done through API calls. (API stands 
+for Application Programming Interface.)
 
+1. The first method to interact withAWS is to use AWS Management Console . The Console is web based and reachable through your browser. You just sign in and go through various menus 
+in order to interact and provision resources. This is especially easy for beginners and for people who want to see what they are doing behind the scenes. However, it requires a lot of manual
+work to provision resources like this. If you have only a several resources, such as several EC2 instances to operate, then this method works fine. However, if you want to provision
+a high number of resources you should use the second way.
+
+2. The second way to interact with AWS is to use AWS Command Line Interface (CLI). You install CLI to your server and than using your credentials you provision resources in an easier way.
+You can simply reenter a command thta helped you provision an EC2 instance by using the arrow keys on your keyboard (Linus users can relate to this)
+
+3. A third method is to use SDKs or software development kits.
+
+No matter hwich method you use, AWS offers a highly detailed documentation with sample codes.
