@@ -2,3 +2,5 @@ AWS offers two services to automatically create and deploy resources. AWS Beanst
 
 These services offer you the opportunity to provision resources at scale. This is particularly useful because it allows you to create a 
 code for provisioning hundreds of resources at once.
+
+Elastic Beanstalk: 
