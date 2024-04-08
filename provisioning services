@@ -3,4 +3,10 @@ AWS offers two services to automatically create and deploy resources. AWS Beanst
 These services offer you the opportunity to provision resources at scale. This is particularly useful because it allows you to create a 
 code for provisioning hundreds of resources at once.
 
-Elastic Beanstalk: 
+Elastic Beanstalk: With Elastic Beanstalk, you just deal with your code. Managing the infrastructure such as scaling and load balancer
+as well as health checks are done by Beanstalk.
+
+
+Cloud Formation: With AWS CloudFormation, you can treat your infrastructure as code. This means that you can build an environment by 
+writing lines of code instead of using the AWS Management Console to individually provision resources.
+Cloud Formation uses yaml or jason files to provision resources in a declarative way.
