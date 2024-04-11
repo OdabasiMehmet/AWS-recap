@@ -19,7 +19,7 @@ So, AWS VPC is like your own private space in the cloud where you can control ev
 
 
 What is an Internet gateway
-Normally when you create a VPC, it does not have internet connection to outer world. ut if you want some of the resources within the VPC to iteract with public through internet,
+Normally when you create a VPC, it does not have internet connection to outer world. But if you want some of the resources within the VPC to iteract with public through internet,
 you can do so by enabling an internet gateway. For example, if you have a website, then you want people to access it. So you enable an internet gateway for the VPC and put the website on a public 
 subnet. You can place the data in a private subnet and deny public access to the data.
 
