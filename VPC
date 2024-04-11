@@ -13,3 +13,13 @@ Neighbors (Other VPCs and the Internet): Sometimes, you might want to invite peo
 Security Guards (Network Firewall and VPN): To make sure everything stays safe and secure, you might hire security guards. In a VPC, you can set up network firewalls and VPN (Virtual Private Network) connections to protect your resources from unauthorized access.
 
 So, AWS VPC is like your own private space in the cloud where you can control everything from who gets in to how they move around, keeping your resources safe and organized.
+
+
+What is an Internet gateway
+Normally when you create a VPC, it does not have internet connection to outer world. ut if you want some of the resources within the VPC to iteract with public through internet,
+you can do so by enabling an internet gateway. For example, if you have a website, then you want people to access it. So you enable an internet gateway for the VPC and put the website on a public 
+subnet. You can place the data in a private subnet and deny public access to the data.
+
+What is a virtual private gateway?
+a private gateway that only allows people in if they are coming from an approved network, not the public internet. This private doorway is called a virtual private gateway, and it allows you to create a VPN connection between a private network, like your on-premises data center or
+internal corporate network to your VPC
