@@ -1,3 +1,6 @@
+Amazon VPC enables you to provision an isolated section of the AWS Cloud. 
+How does it work?
+
 Imagine you're throwing a party at your house. You want to control who comes in, where they can go, and what they can do. That's kind of like what Amazon Virtual Private Cloud (VPC) does for your cloud resources.
 
 Here's the breakdown:
@@ -23,3 +26,8 @@ subnet. You can place the data in a private subnet and deny public access to the
 What is a virtual private gateway?
 a private gateway that only allows people in if they are coming from an approved network, not the public internet. This private doorway is called a virtual private gateway, and it allows you to create a VPN connection between a private network, like your on-premises data center or
 internal corporate network to your VPC
+
+What is AWS Direct Connect
+AWS Direct Connect allows you to establish a completely private, dedicated fiber connection from your data center to AWS. You work with a Direct Connect partner in your
+area to establish this connection, because  AWS Direct Connect provides a physical line that connects your network to your AWS VPC. This can help you meet high
+regulatory and compliance needs, as well as sidestep any potential bandwidth issues.
